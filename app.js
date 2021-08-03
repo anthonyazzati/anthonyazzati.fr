@@ -1,15 +1,4 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
+"use strict";
 
 particlesJS(
   "particles-js",
@@ -70,3 +59,26 @@ particlesJS(
     retina_detect: true,
   }
 );
+
+const navSlide = () => {
+  const $ = (q) => document.querySelector(q);
+  const navLinks = document.querySelectorAll(".nav--links li");
+
+  $(".hamburger").addEventListener("click", () => {
+    $(".hamburger--menu").classList.toggle("hamburger--menu__active");
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFadeIn 1s ease-in-out forwards ${
+          index / 7
+        }s`;
+      }
+    });
+
+    $(".hamburger").classList.toggle("toggle");
+  });
+};
+
+navSlide();

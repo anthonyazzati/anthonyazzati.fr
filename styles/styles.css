@@ -343,6 +343,7 @@ template {
 
 body {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -354,6 +355,15 @@ h6 {
   font-family: "Bebas Neue", cursive;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
 #particles-js {
   width: auto;
   height: 100vh;
@@ -362,5 +372,181 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+@-webkit-keyframes navLinkFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  33% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes navLinkFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  33% {
+    opacity: 0;
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #fafafa;
+}
+
+nav .logo {
+  margin: 24px 0 0 24px;
+  mix-blend-mode: difference;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+
+.nav--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav--links li {
+  margin: 0;
+  opacity: 0;
+}
+
+.nav--count {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 2rem 2rem 2rem 0;
+  width: 50px;
+}
+
+.nav--name {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+}
+
+.hamburger {
+  margin: 24px 24px 0 0;
+  mix-blend-mode: difference;
+}
+
+.hamburger--menu {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #161413;
+  width: 100%;
+  height: 100vh;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.hamburger--menu__active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.hamburger--menu ul li {
+  width: 100%;
+}
+
+.hamburger--menu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburger--menu ul li a:hover {
+  background-color: #fafafa;
+  color: #161413;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 2rem;
+  height: 0.5rem;
+  background-color: #fafafa;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hamburger--second-line {
+  margin-top: 5px;
+}
+
+.toggle .hamburger--first-line {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.toggle .hamburger--second-line {
+  -webkit-transform: rotate(90deg) translate(-12px, 0px);
+          transform: rotate(90deg) translate(-12px, 0px);
+}
+
+@media screen and (min-width: 375px) {
+  .nav--links li {
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

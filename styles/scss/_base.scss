@@ -2,6 +2,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -11,4 +12,13 @@ h4,
 h5,
 h6 {
   font-family: "Bebas Neue", cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
 }
