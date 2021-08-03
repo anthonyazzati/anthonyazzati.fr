@@ -535,18 +535,39 @@ nav .logo {
 }
 
 .toggle .hamburger--first-line {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+          transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .toggle .hamburger--second-line {
-  -webkit-transform: rotate(90deg) translate(-12px, 0px);
-          transform: rotate(90deg) translate(-12px, 0px);
+  -webkit-transform: rotate(45deg) translate(-5px, -4px);
+          transform: rotate(45deg) translate(-5px, -4px);
 }
 
 @media screen and (min-width: 375px) {
   .nav--links li {
     margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav .logo {
+    margin: 2rem 0 0 3rem;
+  }
+  .hamburger {
+    margin: 2rem 3rem 0 0;
+  }
+  .nav--links li {
+    margin: 2.5rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav .logo {
+    margin: 2rem 0 0 8rem;
+  }
+  .hamburger {
+    margin: 2rem 8rem 0 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
