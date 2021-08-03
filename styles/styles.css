@@ -353,4 +353,14 @@ h5,
 h6 {
   font-family: "Bebas Neue", cursive;
 }
+
+#particles-js {
+  width: auto;
+  height: 100vh;
+  background-color: #161413;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 /*# sourceMappingURL=styles.css.map */
