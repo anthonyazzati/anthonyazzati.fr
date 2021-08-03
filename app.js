@@ -16,12 +16,12 @@ particlesJS(
 
   {
     particles: {
-      number: { value: 80, density: { enable: true, value_area: 800 } },
+      number: { value: 100, density: { enable: true, value_area: 800 } },
       color: { value: "#ffffff" },
       shape: {
         type: "circle",
         stroke: { width: 0, color: "#000000" },
-        polygon: { nb_sides: 5 },
+        polygon: { nb_sides: 3 },
         image: { src: "img/github.svg", width: 100, height: 100 },
       },
       opacity: {
@@ -35,15 +35,15 @@ particlesJS(
         anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
       },
       line_linked: {
-        enable: false,
-        distance: 150,
+        enable: true,
+        distance: 120,
         color: "#ffffff",
-        opacity: 0.4,
+        opacity: 0.2,
         width: 1,
       },
       move: {
         enable: true,
-        speed: 2.2,
+        speed: 1,
         direction: "none",
         random: false,
         straight: false,
