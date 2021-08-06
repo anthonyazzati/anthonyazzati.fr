@@ -4,7 +4,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  mix-blend-mode: difference;
+  z-index: 2;
 
   .logo {
     margin: 24px 0 0 24px;
@@ -45,7 +45,6 @@ nav {
 
 .hamburger {
   margin: 24px 24px 0 0;
-  mix-blend-mode: difference;
 
   &--menu {
     position: absolute;

@@ -1,0 +1,65 @@
+.hero {
+  background-color: $black;
+
+  &--title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: $white;
+    font-size: 5rem;
+    letter-spacing: 5px;
+  }
+
+  &--contact-btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 0.8rem 1.5rem;
+    background-color: $white;
+    color: $black;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+      border: 1px solid $white;
+      transition: all 200ms;
+    }
+  }
+
+  div {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $white;
+
+    p {
+      margin: 0 0 1rem 0;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.2rem;
+      animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    i {
+      animation: bounce 1s infinite;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero--contact-btn {
+    margin: 1rem 0;
+  }
+}
