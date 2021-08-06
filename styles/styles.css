@@ -422,12 +422,11 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  color: #fafafa;
+  mix-blend-mode: difference;
 }
 
 nav .logo {
   margin: 24px 0 0 24px;
-  mix-blend-mode: difference;
   font-family: "Bebas Neue", cursive;
   font-size: 2rem;
 }

@@ -4,11 +4,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  color: $white;
+  mix-blend-mode: difference;
 
   .logo {
     margin: 24px 0 0 24px;
-    mix-blend-mode: difference;
     font-family: "Bebas Neue", cursive;
     font-size: 2rem;
   }
