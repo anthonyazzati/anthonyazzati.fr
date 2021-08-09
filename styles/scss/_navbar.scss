@@ -46,6 +46,7 @@ nav {
   margin: 24px 24px 0 0;
 
   &--menu {
+    display: none;
     position: absolute;
     top: 0;
     margin: 0;
@@ -53,11 +54,9 @@ nav {
     background-color: $black;
     width: 100%;
     height: 100vh;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
 
     &__active {
-      transform: translateX(0%);
+      display: block;
     }
 
     ul li {
