@@ -51,8 +51,68 @@
       rel="stylesheet"
     />
 
+    <script
+      src="https://kit.fontawesome.com/aa0e6e5480.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
-  <body> </body>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">AA</a>
+      </div>
+
+      <div class="hamburger--menu">
+        <ul class="nav--links">
+          <li>
+            <a href="#accueil">
+              <span class="nav--count">I</span>
+              <span class="nav--name">Accueil</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="nav--count">II</span>
+              <span class="nav--name">Projets</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="nav--count">III</span>
+              <span class="nav--name">A propos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="nav--count">IV</span>
+              <span class="nav--name">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <div class="hamburger--first-line"></div>
+        <div class="hamburger--second-line"></div>
+      </div>
+    </nav>
+
+    <div id="particles-js">
+      <section class="hero" id="#accueil">
+        <h1 class="hero--title"> Anthony Azzati </h1>
+        <a href="mailto:hello@anthonyazzati.fr" class="hero--contact-btn">
+          Me contacter
+        </a>
+        <div>
+          <i class="fas fa-arrow-down fa-2x"></i>
+        </div>
+      </section>
+    </div>
+
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+  </body>
 </html>
