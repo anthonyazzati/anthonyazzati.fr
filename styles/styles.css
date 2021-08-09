@@ -344,6 +344,7 @@ template {
 body {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 h1,
@@ -509,7 +510,6 @@ nav .logo {
 }
 
 .nav--count {
-  font-family: "Playfair Display", serif;
   font-size: 2rem;
   margin: 2rem 2rem 2rem 0;
   width: 50px;
@@ -549,6 +549,13 @@ nav .logo {
   width: 100%;
 }
 
+.hamburger--menu ul li:hover {
+  background-color: #fafafa;
+  color: #161413;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
 .hamburger--menu ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,13 +566,7 @@ nav .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.hamburger--menu ul li a:hover {
-  background-color: #fafafa;
-  color: #161413;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  mix-blend-mode: difference;
 }
 
 .hamburger:hover {
@@ -596,7 +597,8 @@ nav .logo {
 
 @media screen and (min-width: 375px) {
   .nav--links li {
-    margin: 1rem 0;
+    margin: 0rem 0;
+    padding: 1rem 0;
   }
 }
 
@@ -608,7 +610,8 @@ nav .logo {
     margin: 2rem 3rem 0 0;
   }
   .nav--links li {
-    margin: 2.5rem 0;
+    margin: 0rem 0;
+    padding: 2.5rem 0;
   }
 }
 
@@ -649,7 +652,7 @@ nav .logo {
   display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: center;
-  margin: 3rem 0;
+  margin: 5rem 0;
   padding: 0.8rem 1.5rem;
   background-color: #fafafa;
   color: #161413;
@@ -689,7 +692,13 @@ nav .logo {
           animation: bounce 1s infinite;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 375px) {
+  .hero--contact-btn {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero--contact-btn {
     margin: 1rem 0;
   }

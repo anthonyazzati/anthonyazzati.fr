@@ -21,7 +21,7 @@
     transform: translate(-50%, -50%);
     display: inline-flex;
     text-align: center;
-    margin: 3rem 0;
+    margin: 5rem 0;
     padding: 0.8rem 1.5rem;
     background-color: $white;
     color: $black;
@@ -58,7 +58,13 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 375px) {
+  .hero--contact-btn {
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero--contact-btn {
     margin: 1rem 0;
   }
