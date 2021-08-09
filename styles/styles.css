@@ -344,7 +344,7 @@ template {
 body {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 h1,
@@ -464,7 +464,7 @@ a {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,5 +702,16 @@ nav .logo {
   .hero--contact-btn {
     margin: 1rem 0;
   }
+}
+
+.projects {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.projects h2 {
+  margin: 0;
+  padding: 3rem 0 0 24px;
+  font-size: 4rem;
 }
 /*# sourceMappingURL=styles.css.map */
