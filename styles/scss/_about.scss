@@ -1,0 +1,45 @@
+.about {
+  padding: 48px 0 48px 24px;
+  min-height: 100vh;
+  background-color: $black;
+
+  img {
+    width: 368px;
+    height: auto;
+    transform: translateX(-96px);
+  }
+
+  p {
+    margin: 0;
+    padding: 1rem 0 0 0;
+    letter-spacing: 1px;
+    font-family: "DM Serif Display", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $white;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .about {
+    img {
+      width: 375px;
+    }
+
+    p {
+      padding: 4rem 0 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    img {
+      width: 768px;
+    }
+
+    p {
+      padding: 4rem 0 0 4rem;
+    }
+  }
+}

@@ -1,9 +1,20 @@
 .hero {
   background-color: $black;
 
+  p {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.5rem;
+  }
+
   &--title {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -16,7 +27,7 @@
 
   &--contact-btn {
     position: absolute;
-    top: 55%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-flex;
@@ -62,10 +73,30 @@
   .hero--contact-btn {
     margin: 3rem 0;
   }
+
+  .hero {
+    p {
+      top: 55%;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero--contact-btn {
     margin: 1rem 0;
+  }
+
+  .hero {
+    p {
+      top: 52%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    p {
+      top: 50%;
+    }
   }
 }

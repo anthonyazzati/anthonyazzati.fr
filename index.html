@@ -47,7 +47,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
       rel="stylesheet"
     />
 
@@ -60,6 +64,7 @@
   </head>
 
   <body>
+    <!--Navigation-->
     <nav>
       <div class="logo">
         <a href="#">AA</a>
@@ -100,18 +105,21 @@
       </div>
     </nav>
 
+    <!--Particles background-->
     <div id="particles-js">
       <section class="hero" id="#accueil">
         <h1 class="hero--title"> Anthony Azzati </h1>
         <a href="mailto:hello@anthonyazzati.fr" class="hero--contact-btn">
           Me contacter
         </a>
+        <p> Développeur web Javascript | VueJS</p>
         <div>
           <i class="fas fa-arrow-down fa-2x"></i>
         </div>
       </section>
     </div>
 
+    <!--Projects-->
     <section id="projects" class="projects">
       <h2>Derniers projets</h2>
 
@@ -187,6 +195,48 @@
         </section>
       </a>
     </section>
+
+    <!--About-->
+    <section id="about" class="about">
+      <img
+        src="./assets/img/lucas-clarysse-GFoFEoE900A-unsplash.jpg"
+        alt="Photo de profil d'Anthony Azzati"
+      />
+
+      <p>
+        Je suis un ancien manager de magasin dans le paramédical, passionné par
+        le numérique, les nouvelles technologies et les jeux vidéos j'ai décidé
+        de me reconvertir dans le développement web.
+      </p>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="contact">
+      <p
+        >Travaillons ensemble, c'est
+        <a href="mailto:hello@anthonyazzati.fr">ici que ça se passe. </a>
+      </p>
+
+      <h2>Suivez-moi sur les réseaux</h2>
+
+      <div>
+        <a href="https://www.linkedin.com/in/anthonyazzati" target="_blank">
+          <section>
+            <h3>LinkedIn</h3>
+          </section>
+        </a>
+
+        <a href="https://github.com/AnthonyAzzati" target="_blank">
+          <section style="margin-left: 16px">
+            <h3>GitHub</h3>
+          </section>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <h3>© 2021 | Anthony Azzati</h3>
+    </footer>
 
     <script src="./particles.js"></script>
     <script src="./app.js"></script>
