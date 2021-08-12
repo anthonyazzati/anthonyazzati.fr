@@ -82,3 +82,17 @@ const navSlide = () => {
 };
 
 navSlide();
+
+const navRefresh = () => {
+  const $ = (q) => document.querySelector(q);
+  const links = document.querySelectorAll(".nav--links li a");
+
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", () => {
+      $(".hamburger").classList.toggle("toggle");
+      $(".hamburger--menu").classList.toggle("hamburger--menu__active");
+    });
+  }
+};
+
+navRefresh();
