@@ -89,8 +89,7 @@ const navRefresh = () => {
 
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", () => {
-      $(".hamburger").classList.toggle("toggle");
-      $(".hamburger--menu").classList.toggle("hamburger--menu__active");
+      window.location.reload();
     });
   }
 };
