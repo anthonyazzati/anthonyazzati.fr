@@ -1,7 +1,8 @@
 .projects {
+  flex-wrap: wrap;
   min-height: 100vh;
   background-color: $white;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 
   h2 {
     margin: 0;
@@ -53,10 +54,25 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 3.5rem;
+
+    h2 {
+      padding: 2rem 0 0 0;
+    }
   }
 
   .project--card {
     height: 350px;
     width: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects {
+    h2 {
+      margin: 3rem 0 0 7rem;
+      padding: 0;
+      width: 100%;
+    }
   }
 }
